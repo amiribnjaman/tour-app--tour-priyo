@@ -3,10 +3,10 @@ import React from 'react'
 export default function Navbar() {
     console.log(window.innerHeight)
     return (
-        <div className='w-11/12 mx-auto absolute top-[10px] md:left-[50px]'>
+        <div className='w-11/12 mx-auto absolute top-[5px] md:left-[50px]'>
             <nav class="  border-gray-200 dark:bg-gray-900">
-                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href="https://flowbite.com/" class="flex items-center">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto  p-4">
+                    <a href="#" class="flex items-center">
                         <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
                         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
                     </a>
