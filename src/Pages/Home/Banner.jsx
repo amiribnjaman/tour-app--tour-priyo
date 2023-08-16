@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerImage from '../../Assets/Images/banner.jpg'
+import BannerImage from '../../Assets/Images/homepage-bg.png'
 import Navbar from '../../Shared/Navbar'
 import SearchBox from './SearchBox'
 
