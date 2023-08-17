@@ -67,26 +67,26 @@ export default function SearchBox() {
     }
 
     return (
-        <div class="pb-11 w-[88%] md:left-[6%] mx-auto block absolute top-1/3 p-6 bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <div className="pb-11 w-[88%] md:left-[6%] mx-auto block absolute top-1/3 p-6 bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
             {/* Search types heading or menu */}
             <div className='search-box w-full relative'>
                 <nav class="md:w-[45%] bg-white shadow shadow-[rgba(0,117,255,.0898711)] rounded-xl absolute -top-[60px] left-[27%] items-center hidden justify-between w-full md:flex md:order-2" id="mobile-menu-language-select">
                     <ul class="flex items-center mx-auto flex-col font-medium py-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row  md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li className=''>
-                            <Link to="/?search=flight" className={`flex items-center gap-x-2 py-5 px-6 text-black md:bg-transparent md:dark:text-blue-500 ${search == 'flight' ? ' border-b-[2px] border-[#FCCD03]' : ''}`} aria-current="page">
+                            <Link to="/?search=flight" className={`flex items-center gap-x-2 py-5 px-6 text-black md:bg-transparent md:dark:text-blue-500 ${search == 'flight' ? ' border-b-[2px] border-[#FCCD03]' : 'border-b-[2px] border-transparent'}`} aria-current="page">
                                 {/* <img className={Styles.imgDefalutColor} src={FlightIcon} width={25} height={25} alt="" /> */}
                                 <FlightSvg search={search} />
                                 <span className='text-[16px]'>Flight</span>
                             </Link>
                         </li>
                         <li className='px-2'>
-                            <Link to="/?search=hotel"  className={`flex items-center gap-x-2 py-5 px-6 text-black md:bg-transparent md:dark:text-blue-500 ${search == 'hotel' ? ' border-b-[2px] border-[#FCCD03]' : ''}`}>
+                            <Link to="/?search=hotel"  className={`flex items-center gap-x-2 py-5 px-6 text-black md:bg-transparent md:dark:text-blue-500 ${search == 'hotel' ? ' border-b-[2px] border-[#FCCD03]' : 'border-b-[2px] border-transparent'}`}>
                                 <HotelSvg search={search} />
                                 <span className='text-[16px]'>Hotel</span>
                             </Link>
                         </li>
                         <li className=''>
-                            <Link to="/?search=tour"  className={`flex items-center gap-x-2 py-5 px-6 text-black md:bg-transparent md:dark:text-blue-500 ${search == 'tour' ? ' border-b-[2px] border-[#FCCD03]' : ''}`}>
+                            <Link to="/?search=tour"  className={`flex items-center gap-x-2 py-5 px-6 text-black md:bg-transparent md:dark:text-blue-500 ${search == 'tour' ? ' border-b-[2px] border-[#FCCD03]' : 'border-b-[2px] border-transparent'}`}>
                                 <TourSvg search={search} />
                                 <span className='text-[16px]'>Tour</span></Link>
                         </li>
@@ -98,7 +98,7 @@ export default function SearchBox() {
             {/*--- Search Box Content-- */}
             <div className='mt-6'>
                 {/*---- Flight Route types --*/}
-                <div className="flex gap-x-8" onChange={handleFilghtType}>
+                <div className="flex gap-x-8 ml-2" onChange={handleFilghtType}>
                     <label className="text-[#3a4856] flex gap-1 items-center cursor-pointer">
                         <input className={`font-bold border-2 cursor-pointer ${flightType == 'one-way' ? ' ' : 'text-[#BAC4D2] border-[#BAC4D2]'}`} defaultChecked type="radio" name="flightType" value='one-way' />
                         <span className={`text-[16px] font-semibold ${flightType == 'one-way' ? 'text-[#1C3C6B]' : 'text-[#BAC4D2]'}`}>One Way</span>
@@ -122,7 +122,7 @@ export default function SearchBox() {
                             <h2 className='font-bold text-[20px] text-[#1c3c6b] leading-none'>Dhaka</h2>
                             <h5 className='text-[12px] text-[#5d6974]'>DAC, Hazrat Shazalal Internation Air..</h5>
                         </div>
-                        <div className='relative top-[30%] right-[20px] '>
+                        <div className='relative top-[25%] right-[18px] '>
                             <img src={SwapImg} alt="" />
                         </div>
                         <div className='border pr-4 pl-6 py-2 rounded-xl -ml-8  md:w-1/2'>
@@ -153,7 +153,7 @@ export default function SearchBox() {
                         <div>
                             <h4 className='text-xs text-[#5d6974] uppercase'>TRAVELER, CLASS</h4>
                             <h2 className='font-bold text-[20px] text-[#1c3c6b] leading-none'>1 Traveler</h2>
-                            <h5 className='text-[13px] text-[#5d6974]'>Economy</h5>
+                            <h5 className='text-xs text-[#5d6974]'>Economy</h5>
                         </div>
                     </div>
 
