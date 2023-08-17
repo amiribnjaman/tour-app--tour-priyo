@@ -1,3 +1,6 @@
 .imgDefalutColor{
     color: #ddd !important;
 }
+[type='checkbox']:checked, [type='radio']:checked, .dark [type='checkbox']:checked, .dark [type='radio']:checked {
+    background-color: #1C3C6B !important;
+}

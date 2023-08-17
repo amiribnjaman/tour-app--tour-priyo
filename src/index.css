@@ -10,9 +10,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+[type='checkbox']:checked,
+[type='radio']:checked,
+.dark [type='checkbox']:checked,
+.dark [type='radio']:checked {
+  background-color: #1C3C6B !important;
+}
+
+[type='checkbox']:focus,
+[type='radio']:focus {
+  outline: 0 !important;
+  outline-offset: 0 !important;
+  -tw-ring-color: transparent;
+  --tw-ring-shadow: transparent;
 }
